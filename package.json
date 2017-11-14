@@ -27,7 +27,9 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "js-data": "^3.0.1",
+    "js-data-sql": "^1.0.1",
     "jsonwebtoken": "^8.1.0",
+    "mysql": "^2.15.0",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1"
   },
