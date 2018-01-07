@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'odengec-server',
-    script: 'node ./dist/server.js'
+    script: './dist/server.js'
   }],
   deploy: {
     production: {
