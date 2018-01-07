@@ -11,7 +11,9 @@
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "debug": "npm run build && npm run watch-debug"
+    "debug": "npm run build && npm run watch-debug",
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,7 @@
     "@types/passport-jwt": "^3.0.0",
     "concurrently": "^3.5.0",
     "nodemon": "^1.12.1",
+    "pm2": "^2.9.1",
     "tslint": "^5.8.0",
     "typescript": "^2.6.1"
   }
