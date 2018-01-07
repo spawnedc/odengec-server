@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'odengec-server',
-    script: './dist/server.js'
+    script: 'node ./dist/server.js'
   }],
   deploy: {
     production: {
@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:spawnedc/odengec-server.git',
       path: '/home/ubuntu/odengec-server',
-      'post-deploy': 'npm install && npm build && pm2 startOrRestart ecosystem.config.js'
+      'post-deploy': 'npm install && npm run build && pm2 startOrRestart ecosystem.config.js'
     }
   }
 }
